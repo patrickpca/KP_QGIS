@@ -45,7 +45,7 @@ rpl[0] = long
 rpl[1] = lat
 rpl[2]= aux
 
-rpl.to_csv(r'D:\EGS\Python\Convert_KP\export\rpl.xyz',index=False, header=None)#, sep=',')
+rpl.to_csv(r'D:\Git\arquivos\rpl.xyz',index=False, header=None)#, sep=',')
 
 
 

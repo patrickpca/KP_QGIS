@@ -90,6 +90,3 @@ plt.title('', fontsize=40, fontweight='bold')
 
 
 
-
-
-

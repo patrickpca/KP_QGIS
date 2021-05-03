@@ -4,18 +4,22 @@ Spyder Editor
 
 Autor: Patrick Coser 
 
-Convert RPL para KP
+Convert Trajetoria[lat,Lon] para KP[KilometerPoint]
 
-
-KP - Ponto por kilometro (1)
 """
 
+##############################################################################
+##############################################################################
+##############################################################################
 
+"""
+Exportando informações para .txt
+"""
 import pandas as pd
-import numpy as np
+import numpy as np 
 import csv
 
-path2 = r'D:\Git\arquivos\malbec_praia_grande.xls'
+path2 = r'D:\Git\arquivos\raw_data.xls' 
 
 cols = [2,3,4,5,6,7]
 
@@ -37,7 +41,10 @@ rpl[2]= aux
 rpl.to_csv(r'D:\Git\arquivos\rpl.xyz',index=False, header=None)#, sep=',')
 
 
-
+##############################################################################
+##############################################################################
+##############################################################################
+##############################################################################
 
 
 import numpy as np
@@ -47,14 +54,8 @@ import matplotlib.pyplot as plt
 # from mpl_toolkits.basemap import Basemap
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
-# import matplotlib.ticker as mticker
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
-# import netCDF4 as nc
 
-# from mpl_toolkits.mplot3d import Axes3D
-# import cmocean as cm
-# from matplotlib.collections import PolyCollection
-# from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
 
 lat2 = -(dado_xls[0] + dado_xls[1]/60)
@@ -79,7 +80,6 @@ gl.xformatter = LONGITUDE_FORMATTER
 gl.yformatter = LATITUDE_FORMATTER
 ax.stock_img()
 ax.set_extent([r_lon2_max, r_lon2_min, r_lat2_max, r_lat2_min], crs=ccrs.PlateCarree())
-# ax.set_extent([-43, -48, -22, -27], crs=ccrs.PlateCarree())
 gl.xlabel_style = {'size': 20 ,'color': 'black','weight': 'bold'}
 gl.ylabel_style = {'size': 20, 'color': 'black', 'weight': 'bold'}
 gl.xlabels_top = False
@@ -87,6 +87,9 @@ gl.ylabels_left = True
 gl.ylabels_right = False
 plt.title('', fontsize=40, fontweight='bold')
 
-# plt.savefig('Fig_thetao_mean.png')
-# plt.show()
+
+
+
+
+
 

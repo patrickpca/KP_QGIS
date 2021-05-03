@@ -11,17 +11,6 @@ KP - Ponto por kilometro (1)
 """
 
 
-# path = r'D:\EGS\Python\Convert_KP\RPL_CRS01_MCP-BEL_SEG1_13Octob2020.txt'
-
-# names = ['X', 'Y', 'Depth']
-
-# dado_rpl = pd.read_csv(path, header=None, names=names)
-
-##############################################################################
-##############################################################################
-##############################################################################
-
-
 import pandas as pd
 import numpy as np
 import csv

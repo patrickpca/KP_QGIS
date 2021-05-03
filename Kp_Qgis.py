@@ -13,7 +13,7 @@ Convert Trajetoria[lat,Lon] para KP[KilometerPoint]
 ##############################################################################
 
 """
-Exportando informações para .txt
+Exportando informações .xls para .txt
 """
 import pandas as pd
 import numpy as np 
